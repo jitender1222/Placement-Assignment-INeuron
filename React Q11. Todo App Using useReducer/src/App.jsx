@@ -1,7 +1,6 @@
 import { useEffect, useReducer, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
-import todoIcon from "./assets/Todo-Icon.png";
 
 function todoRducer(todos, action) {
   switch (action.type) {
@@ -75,14 +74,13 @@ function App() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="w-full mx-auto max-w-lg p-4 rounded-md drop-shadow-xl flex flex-col justify-center bg-[#758bfd] mt-10"
+        className="w-full mx-auto max-w-lg p-4 rounded-md drop-shadow-xl flex flex-col justify-center bg-[#2f4de2] mt-10"
       >
         <img
-          src={todoIcon}
+          src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
           alt="Todo Image"
           className="w-20 m-auto drop-shadow-2xl"
         />
-        <h2 className="w-max m-auto text-2xl underline pt-6">Todo App</h2>
         <div className="flex items-center gap-3 mb-5 w-full mt-10">
           <input
             className="p-3 text-black w-full rounded outline-none drop-shadow-lg"
@@ -93,7 +91,7 @@ function App() {
           />
           <button
             onClick={handleAddTodo}
-            className="py-3 px-5 cursor-pointer rounded  bg-[#003566] hover:bg-[#001d3d] text-white drop-shadow-lg transition-all duration-200 outline-none"
+            className="py-3 px-5 cursor-pointer rounded  bg-[#66a9e8] hover:bg-[#469df5] text-white drop-shadow-lg transition-all duration-200 outline-none"
           >
             {isEdit ? "Save" : "Add"}
           </button>

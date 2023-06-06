@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../App";
 
 const Button = () => {
-  console.log("button");
+  // console.log("button");
   const { darkMode, toggleDark } = useContext(ThemeContext);
   const theme = darkMode ? "dark" : "light";
 

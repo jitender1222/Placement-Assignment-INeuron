@@ -11,7 +11,6 @@ function App() {
   const toggleDark = () => {
     SetDarkMode(!darkMode);
   };
-
   useEffect(() => {
     const theme = darkMode ? "dark" : "light";
     const body = document.querySelector("body");
